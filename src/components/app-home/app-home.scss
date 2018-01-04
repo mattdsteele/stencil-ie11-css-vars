@@ -13,9 +13,10 @@ app-home {
     // Works:
     // background: $logoAsUrl;
     // background: $logoAsDataUri;
+    background: var(--logo-as-uri, $logoAsUrl);
 
     // Does not work in IE11:
-    background: var(--logo-as-uri, $logoAsDataUri);
+    // background: var(--logo-as-uri, $logoAsDataUri);
   }
 
   button {
